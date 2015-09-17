@@ -18,19 +18,28 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-.main {
+@media only screen and (min-width: 60em) {
+	.main {
 	position: absolute;
 	top: 25vh;
 	left: 25%;
+	}
 }
+
+.main {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+
 
 .logo-boxed {
 	letter-spacing: 1px;
 	line-height: 1em;
 	color: #fff;
 	background-color: #555;
-	padding: 0.5em;
+	padding: 0.25em;
 	display: inline-block;
 	margin-bottom: 1em;
 }
@@ -40,7 +49,7 @@ html {
 	line-height: 1em;
 	color: #000;
 	background-color: none;
-	padding: 0.5em;
+	padding: 0.25em;
 	padding-right: 0;
 	display: inline-block;
 }
@@ -60,6 +69,7 @@ html {
 
 .name-and-title {
 	display: inline-block;
+	margin: 0.25em;
 }
 
 .name, .job-title {
@@ -79,8 +89,23 @@ html {
 
 .contact-info-list li {
 	display: inline-block;
+	width: 15%;
+}
+
+.contact-info-list img {
+	width: 2em;
 }
 
 .email {
 	padding-bottom: 1em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
 }
+
+.mugshot {
+	position: absolute;
+	left: 0;
+	top: 7.5em;
+}
+
