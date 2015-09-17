@@ -19,24 +19,43 @@ html {
   box-sizing: inherit;
 }
 
-.logo {
+.main {
+	position: absolute;
+	top: 25vh;
+	left: 25%;
+}
+
+.logo-boxed {
+	letter-spacing: 1px;
 	line-height: 1em;
 	color: #fff;
 	background-color: #555;
 	padding: 0.5em;
 	display: inline-block;
+	margin-bottom: 1em;
+}
+
+.logo {
+	letter-spacing: 1px;
+	line-height: 1em;
+	color: #000;
+	background-color: none;
+	padding: 0.5em;
+	padding-right: 0;
+	display: inline-block;
 }
 
 .dotcom {
-	display: inline;
+	display: none;
 	font-size: 1.8020rem;
   line-height: 1.6648;
 
 }
 .top {
-	position: absolute;
-	top: 25vh;
-	left: 25%;
+}
+
+.bottom {
+	margin-left: 9em;
 }
 
 .name-and-title {
@@ -51,3 +70,4 @@ html {
 .job-title {
 
 }
+
