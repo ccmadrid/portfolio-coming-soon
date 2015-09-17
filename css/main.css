@@ -19,6 +19,49 @@ html {
   box-sizing: inherit;
 }
 
+@keyframes fade-left {
+	0% {
+	left: 0;
+	opacity: 1;
+} 100% {
+	left: -2em;
+	opacity: 0;
+	display: width: 0;
+	}
+}
+
+@keyframes box {
+	0% {
+		color: #333;
+		background-color: none;
+} 100% {
+		color: #000;
+		background-color: #555;
+		padding: 0.25em;
+	}
+}
+
+@keyframes bottom-slide {
+	0% {
+		opacity: 0;
+		top: -5em;
+} 100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+@keyframes slide-right {
+	0% {
+		opacity: 0;
+		left: -9em;
+} 100% {
+		opacity: 1;
+		left: -4em;
+	}
+}
+
+
 
 .main {
 	position: absolute;
@@ -27,10 +70,7 @@ html {
 	left: 1em;
 }
 
-
-
-
-.logo-boxed {
+/*.logo-boxed {
 	letter-spacing: 1px;
 	line-height: 1em;
 	color: #fff;
@@ -39,38 +79,48 @@ html {
 	display: inline-block;
 	margin-bottom: 1em;
 }
-
+*/
 .logo {
 	letter-spacing: 1px;
 	line-height: 1em;
 	color: #000;
 	background-color: none;
 	padding: 0.25em;
-	padding-right: 0;
 	display: inline-block;
+	animation: box 2s forwards ease-out;
 }
 
 .dotcom {
-	display: none;
+	display: inline-block;
+	position: relative;
 	font-size: 1.8020rem;
   line-height: 1.6648;
-
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+	animation: fade-left 1s forwards ease-out;
 }
 .top {
+	overflow: hidden;
 }
 
 .bottom {
+	position: relative;
 	margin-left: 9em;
+	animation-delay: 4s;
+	animation: bottom-slide 2s forwards;
 }
 
 .name-and-title {
 	display: inline-block;
-	margin: 0.25em;
+	margin: 0;
+	position: relative;
+	left: -4em;
+	animation: slide-right 2s forwards;
 }
 
 .name, .job-title {
 	line-height: 1em;
-	margin: 0.25em;
+	margin-bottom: 0.25em;
 }
 
 .job-title {
@@ -101,8 +151,7 @@ html {
 
 .mugshot {
 	position: absolute;
-	left: 0;
-	top: 8em;
+	left: -9em
 
 }
 
