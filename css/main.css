@@ -18,19 +18,15 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-@media only screen and (min-width: 60em) {
-	.main {
-	position: absolute;
-	top: 25vh;
-	left: 25%;
-	}
-}
+
 
 .main {
 	position: absolute;
+	max-width: 600px;
 	top: 1em;
 	left: 1em;
 }
+
 
 
 
@@ -106,6 +102,26 @@ html {
 .mugshot {
 	position: absolute;
 	left: 0;
-	top: 7.5em;
+	top: 8em;
+
 }
 
+.mugshot img {
+	width: 7.75em;
+}
+
+@media only screen and (min-width: 60em) {
+	.main {
+		position: absolute;
+		top: 25vh;
+		left: calc(50% - 300px);
+	}
+}
+
+@media only screen and (min-width: 90em) {
+
+}
+
+@media only screen and (min-width: 120em) {
+
+}
