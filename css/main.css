@@ -12,9 +12,42 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  position: relative;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+.logo {
+	line-height: 1em;
+	color: #fff;
+	background-color: #555;
+	padding: 0.5em;
+	display: inline-block;
+}
+
+.dotcom {
+	display: inline;
+	font-size: 1.8020rem;
+  line-height: 1.6648;
+
+}
+.top {
+	position: absolute;
+	top: 25vh;
+	left: 25%;
+}
+
+.name-and-title {
+	display: inline-block;
+}
+
+.name, .job-title {
+	line-height: 1em;
+	margin: 0.25em;
+}
+
+.job-title {
+
+}
