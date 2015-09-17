@@ -129,8 +129,6 @@ html {
 	position: absolute;
 	background-color: #fff;
 	max-width: 650px;
-	top: 1em;
-	left: 1em;
 	padding: 1em;
 	padding-bottom: 0;
 	-webkit-animation: fade-in 2500ms forwards;
@@ -163,7 +161,7 @@ html {
 }
 
 .dotcom {
-	display: inline-block;
+	display: inline;
 	position: relative;
 	font-size: 1.8020rem;
   line-height: 1.6648;
@@ -188,20 +186,16 @@ html {
 .name-and-title {
 	opacity: 0;
 	display: inline-block;
-	margin: 0;
+	margin-bottom: 1em;
 	position: relative;
-	left: -4em;
-	-webkit-animation: slide-right 500ms ease-out 2250ms forwards;
-	        animation: slide-right 500ms ease-out 2250ms forwards;
+	left: 0;
+	-webkit-animation: bottom-slide 500ms ease-out 2250ms forwards;
+	        animation: bottom-slide 500ms ease-out 2250ms forwards;
 }
 
 .name, .job-title {
 	line-height: 1em;
 	margin-bottom: 0.25em;
-}
-
-.job-title {
-
 }
 
 .contact-info-list {
@@ -237,6 +231,18 @@ html {
 	width: 7.75em;
 	height: auto;
 }
+@media only screen and (min-width: 24em){
+	.name-and-title {
+		opacity: 0;
+		display: inline-block;
+		margin: 0;
+		position: relative;
+		left: -4em;
+		-webkit-animation: slide-right 500ms ease-out 2250ms forwards;
+		        animation: slide-right 500ms ease-out 2250ms forwards;
+	}
+
+}
 
 @media only screen and (min-width: 60em) {
 	.main {
@@ -244,12 +250,4 @@ html {
 		top: 10vh;
 		left: calc(50% - 325px);
 	}
-}
-
-@media only screen and (min-width: 90em) {
-
-}
-
-@media only screen and (min-width: 120em) {
-
 }
