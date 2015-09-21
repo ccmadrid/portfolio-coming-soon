@@ -229,7 +229,6 @@ html {
 		-webkit-animation: slide-right 500ms ease-out 2250ms forwards;
 		        animation: slide-right 500ms ease-out 2250ms forwards;
 	}
-
 }
 
 @media only screen and (min-width: 60em) {
